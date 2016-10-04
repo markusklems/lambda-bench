@@ -1,0 +1,11 @@
+service: lambda-bench-client
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: eu-west-1
+  profile: dev
+
+functions:
+  client:
+    handler: handler.client
